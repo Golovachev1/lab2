@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Проверка истинности высказывания</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script>
+  let x = Number(prompt('Введите x'));
+  let a = 3.9;
+  let b = 4.6;
+  let y;
+  if (x < 3) {
+    y = Math.log10(x) + Math.E**(x)
+  } if (x > 5) {
+    y = Math.sin(a/x) * b
+  } if (x >= 3 && x <= 5) {
+    y = (Math.cos(a*x))/(x**2 + 1) + x
+  }
+  document.write('Результат функции ', y); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Проверка истинности высказывания</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script>
+  let chislo1 = Number(prompt('Введите первое число'));
+  let chislo2 = Number(prompt('Введите второе число'));
+  let chislo3 = Number(prompt('Введите третье число')); 
+  let kolvomin = 0;
+  let kolvochet = 0;
+  if (chislo1 % 2 == 0) {
+    kolvochet = kolvochet + 1
+  } if (chislo1 < 0) {
+    kolvomin = kolvomin + 1
+  } if (chislo2 % 2 == 0) {
+    kolvochet = kolvochet + 1
+  } if (chislo2 < 0) {
+    kolvomin = kolvomin + 1
+  } if (chislo3 % 2 == 0) {
+    kolvochet = kolvochet + 1
+  } if (chislo3 < 0) {
+    kolvomin = kolvomin + 1
+  }
+  document.write('Количество отрицательных чисел = ', kolvomin);
+  document.write('<br \/>Количество чётных чисел = ', kolvochet);
+  </script>
+</body>
+</html>

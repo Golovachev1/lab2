@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Проверка истинности высказывания</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script>
+  let x = Number(prompt('Введите x'));
+  let a = 1.7; 
+  let b = 4.6;
+  let y;
+  switch(x) {
+    case 2:
+    y = Math.log10(x) + Math.E**(x)
+    break;
+    case 5:
+    y = (Math.cos(a*x))/(x**2 + 1) + x
+    break;
+    case 8:
+    y = Math.sin(a/x) * b
+    break;
+    default:
+        y = ("none")
+  }
+  document.write('Результат функции: ', y); 
+  </script>
+</body>
+</html>
